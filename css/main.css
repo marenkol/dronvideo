@@ -1,0 +1,451 @@
+
+/* GENERAL STYLES */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+::-webkit-input-placeholder {
+	color: #fff !important;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+::-moz-placeholder {
+	color: #fff !important;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+:-ms-input-placeholder {
+	color: #fff !important;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+:-moz-placeholder {
+	color: #fff !important;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+
+.dronex_pagetitle {
+	font-size: 29px;
+}
+@media (min-width: 648px) {
+	.dronex_pagetitle {
+		font-size: 65px;
+	}
+}
+@media (min-width: 992px) {
+	.dronex_pagetitle {
+		font-size: 95px;
+	}
+}
+
+/* NAV */
+.navbar-default {
+	background-color: rgba(225,225,225, .5);
+}
+.dronex_navbar {
+	min-height: 80px;
+	margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 8001;
+    border: none;
+    color: #FFF;
+
+}
+.dronex_navbar-toggle {
+	margin-top: 25px;
+}
+.dronex_navbar_collapse {
+	position: relative;
+    z-index: 8001;
+}
+.dronex_navbar a {
+	color: #FFF !important;
+}
+.navbar-brand {
+	position: relative;
+	z-index: 8002;
+}
+.dronex_navbar_collapse .navbar-right li a {
+	height: 40px;
+	line-height: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+}
+@media (min-width:768px) {
+	.dronex_navbar_collapse .navbar-right li a {
+		height: 80px;
+		line-height: 80px;
+		padding-top: 0;
+		padding-bottom: 0;
+		border: none;
+	}
+}
+
+.dronex_logo {
+	height: 50px;
+}
+.dronex_logo-img,
+.dronex_logo-text {
+	display: inline-block;
+}
+.dronex_logo-text {
+	padding-left: 15px;
+}
+.dronex_logo-text .logo-text-big {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.dronex_logo-text .logo-text-small {
+	font-size: 15px;
+}
+@media (min-width: 648px) {
+	.dronex_logo-text .logo-text-big {
+		font-size: 26px;
+	}
+	.dronex_logo-text .logo-text-small {
+		font-size: 18px;
+	}
+}
+
+/* MODAL */
+.dronex_modal__btn {
+	margin-top: 18px;
+	padding: 10px 25px;
+    margin-left: 10px;
+    background-color: rgba(0,0,0, .8);
+    border: none;
+    border-radius: 0;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.dronex_modal__btn:hover,
+.dronex_modal__btn:active,
+.dronex_modal__btn:visited,
+.dronex_modal__btn:focus {
+	outline: none !important;
+	color: #FFF;
+	background-color: rgba(0,0,0, .4);
+}
+
+.dronex_modal__form {
+	margin-top: 40px;
+	padding: 20px;
+}
+
+/*=============================================
+INTRO SECTION
+=============================================*/
+.dronex_intro {
+	color: #FFF;
+	text-align: center;
+
+}
+.dronex_intro__image {
+	min-height: 100vh;
+	padding: 190px 20px 100px;
+	background: #111111 url(../img/maxresdefault.jpg) 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.dronex_intro__image:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, .1);
+}
+
+.dronex_intro__title {
+    text-transform: uppercase;
+    opacity: .9;
+    font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	z-index: 1;
+}
+.dronex_intro__scroll,
+.dronex_intro__subtitle {
+	margin-top: 100px;
+	position: relative;
+	z-index: 1;
+}
+.dronex_intro__content {
+	color: #111;
+	padding: 100px 20px;
+}
+
+.dronex_intro__content-title {
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+.dronex_intro__content-text {
+	font-size: 1.4em;
+    line-height: 1.6em;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+
+
+/*=============================================
+WORKS SECTION
+=============================================*/
+.dronex_works {
+	color: #FFF;
+	text-align: center;
+}
+.dronex_works__image {
+	min-height: 100vh;
+	padding: 190px 20px 100px;
+	background: #111111 url(../img/djiphantom4c.jpg) 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.dronex_works__image:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, .4);
+}
+.dronex_works__title {
+	position: relative;
+	z-index: 1;
+    text-transform: uppercase;
+    opacity: .9;
+    font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+.dronex_works__content {
+	color: #111;
+	padding: 80px 20px;
+}
+.dronex_works__flexbox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.dronex_works__flex-item {
+	flex-basis: 450px;
+	margin-bottom: 30px;
+}
+
+
+
+
+/*=============================================
+TYPE OF WORKS SECTION
+=============================================*/
+.dronex_typeofworks {
+	color: #FFF;
+	text-align: center;
+}
+.dronex_typeofworks__image {
+	min-height: 100vh;
+	padding: 190px 20px 100px;
+	background: #111111 url(../img/dron.jpg) 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.dronex_typeofworks__image:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, .4);
+}
+.dronex_typeofworks__title {
+	position: relative;
+	z-index: 1;
+    text-transform: uppercase;
+    opacity: .9;
+    font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+.dronex_typeofworks__content {
+	color: #111;
+	padding: 80px 20px;
+}
+.dronex_typeofworks__flexbox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.dronex_typeofworks__flex-item {
+	flex-basis: 300px;
+	margin-bottom: 30px;
+	padding: 5px;
+}
+.dronex_typeofworks__flex-item-title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.dronex_typeofworks__flex-item-img {
+	margin-bottom: 15px;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+}
+.dronex_typeofworks__flex-item-text {
+	font-size: 1em;
+    line-height: 1.4em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+
+
+
+/*=============================================
+DETAILS SECTION
+=============================================*/
+.dronex_details {
+	color: #FFF;
+	text-align: center;
+}
+.dronex_details__image {
+	min-height: 100vh;
+	padding: 190px 20px 100px;
+	background: #111111 url(../img/dron-3.jpg) 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.dronex_details__image:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, .4);
+}
+.dronex_details__title {
+	position: relative;
+	z-index: 1;
+    text-transform: uppercase;
+    opacity: .9;
+    font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+.dronex_details__content {
+	color: #111;
+	padding: 80px 20px;
+}
+
+
+/*=============================================
+DETAILS SECTION
+=============================================*/
+.dronex_request {
+	color: #FFF;
+	text-align: center;
+}
+.dronex_request__image {
+	min-height: 100vh;
+	padding: 190px 20px 100px;
+	background: #111111 url(../img/dron-2.jpg) 50% no-repeat;
+	background-size: cover;
+	/* position: relative; */
+}
+/* .dronex_request__image:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, .05);
+} */
+.dronex_request__content {
+	/* position: relative;
+	z-index: 1; */
+	background-color: rgba(0,0,0, .6);
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.dronex_request__content_title,
+.dronex_request__content_subtitle {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.dronex_request__form {
+	margin-top: 30px;
+}
+.dronex_request__field {
+	background-color: transparent !important;
+	font-weight: bold;
+    border-radius: 0;
+	color: #FFF;
+	letter-spacing: 1px;
+}
+.dronex_request__btn {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    background-color: rgba(0,0,0, .5);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+.dronex_request__btn:hover {
+	color: #FFF;
+	background-color: rgba(0,0,0, .4);
+}
+
+/*=============================================
+FOOTER
+=============================================*/
+.dron__footer {
+	font-size: 18px;
+	color: #fff;
+	padding: 80px 20px;
+	background-color: #111;
+}
+.dron__footer p {
+	margin-bottom: 20px;
+}
+.dron__footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+.dron__footer a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+.dron__footer_socials {
+	display: block;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.dron__footer_socials li {
+	display: inline-block;
+}
+.dron__footer_sociallink {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 30px;
+}
