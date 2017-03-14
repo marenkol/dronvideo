@@ -9,6 +9,19 @@
 </head>
 <body>
 	<nav class="navbar navbar-default dronex_navbar" role="navigation">
+		<div class="dronex_nav_phones ">
+			<div class="container">
+				<ul class="row ">
+					<li class="text-center col-xs-12 col-sm-5 col-sm-push-1">
+						<a href="tel:+380955834848">(095) 583-48-48</a>
+					</li>
+					<li class="text-center col-xs-12 col-sm-5">
+						<a href="tel:+380672602050">(067) 260-20-50</a>
+					</li>
+				</ul>
+			</div><!-- /.container -->
+		</div>
+
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -36,8 +49,10 @@
 			<div class="collapse navbar-collapse dronex_navbar_collapse" id="bs-example-navbar-collapse-1">
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="tel:+380955834848">(095) 583-48-48</a></li>
-					<li><a href="tel:+380672602050">(067) 260-20-50</a></li>
+					<li><a class="dronex_nav_link" href="#works_section">Работы</a></li>
+					<li><a class="dronex_nav_link" href="#type_of_works_section">Услуги</a></li>
+					<li><a class="dronex_nav_link" href="#details_section">Техника</a></li>
+					<li><a class="dronex_nav_link" href="#footer_contacts">Контакты</a></li>
 					<li>
 						<div class="dronex-nav__order">
 							<button class="btn dronex_modal__btn navbar-btn" data-toggle="modal" data-target="#woofit-modal">Заказать</button>
@@ -76,10 +91,10 @@
 			<div class="dronex_intro__image" >
 				<h1 class="dronex_intro__title dronex_pagetitle">Съемка фото и видео квадрокоптером</h1>
 				<h3 class="dronex_intro__subtitle dronex_pagesubtitle">ПЕРВАЯ ПРОБНАЯ СЪЕМКА БЕСПЛАТНО!</h3>
-				<div class="dronex_intro__scroll"><span>SCROLL DOWN</span></div>
+				<div class="dronex_intro__scroll"><a href="#dronex_intro__content">SCROLL DOWN</a></div>
 			</div>
 
-			<div class="dronex_intro__content">
+			<div id="dronex_intro__content" class="dronex_intro__content">
 				<div class="row">
 					<div class="col-xs-12 col-md-8 col-md-push-2">
 						<h3 class="text-center dronex_intro__content-title">БЕСПЛАТНАЯ ВИДЕОСЪЕМКА</h3>
@@ -96,7 +111,7 @@
 
 
 		<!-- WORKS SECTION -->
-		<section class="dronex_works">
+		<section id="works_section" class="dronex_works">
 			<div class="dronex_works__image" >
 				<h1 class="dronex_works__title dronex_pagetitle">
 					ПРИМЕРЫ РАБОТ
@@ -129,17 +144,17 @@
 
 
 		<!-- TYPE OF WORKS SECTION -->
-		<section class="dronex_typeofworks">
+		<section id="type_of_works_section" class="dronex_typeofworks">
 			<div class="dronex_typeofworks__image" >
 				<h1 class="dronex_typeofworks__title dronex_pagetitle">
 					Виды работ
 				</h1>
 			</div>
 
-			<div class="dronex_typeofworks__content">
+			<div class="dronex_typeofworks__content container">
 
-				<div class="dronex_typeofworks__flexbox">
-					<div class="dronex_typeofworks__flex-item">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 						<h4 class="dronex_typeofworks__flex-item-title">СВАДЕБНАЯ СЬЕМКА</h4>
 						<img src="img/wed2.jpg" alt="" class="img-responsive dronex_typeofworks__flex-item-img">
 						<p class="dronex_typeofworks__flex-item-text">
@@ -147,7 +162,7 @@
 						</p>
 					</div>
 					<!-- /.dronex_typeofworks__flex-item -->
-					<div class="dronex_typeofworks__flex-item">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 						<h4 class="dronex_typeofworks__flex-item-title">СЬЕМКА НЕДВИЖИМОСТИ</h4>
 						<img src="img/real2.jpg" alt="" class="img-responsive dronex_typeofworks__flex-item-img">
 						<p class="dronex_typeofworks__flex-item-text">
@@ -155,7 +170,7 @@
 						</p>
 					</div>
 					<!-- /.dronex_typeofworks__flex-item -->
-					<div class="dronex_typeofworks__flex-item">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 						<h4 class="dronex_typeofworks__flex-item-title">ГОРОДСКАЯ СЬЕМКА</h4>
 						<img src="img/city2.jpg" alt="" class="img-responsive dronex_typeofworks__flex-item-img">
 						<p class="dronex_typeofworks__flex-item-text">
@@ -163,7 +178,7 @@
 						</p>
 					</div>
 					<!-- /.dronex_typeofworks__flex-item -->
-					<div class="dronex_typeofworks__flex-item">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 						<h4 class="dronex_typeofworks__flex-item-title">СЬЕМКА МЕРОПРИЯТИЙ</h4>
 						<img src="img/event2.jpg" alt="" class="img-responsive dronex_typeofworks__flex-item-img">
 						<p class="dronex_typeofworks__flex-item-text">
@@ -181,7 +196,7 @@
 
 
 		<!-- DETAILS SECTION -->
-		<section class="dronex_details">
+		<section id="details_section" class="dronex_details">
 			<div class="dronex_details__image" >
 				<h1 class="dronex_details__title dronex_pagetitle">
 					С ПОМОЩЬЮ ЧЕГО МЫ СНИМАЕМ?
@@ -218,7 +233,7 @@
 
 
 		<!-- REQUEST SECTION -->
-		<section class="dronex_request">
+		<section id="request_section" class="dronex_request">
 			<div class="dronex_request__image" >
 				<div class="container">
 					<div class="row">
@@ -254,7 +269,7 @@
 		</section>
 	</main>
 
-	<footer class="dron__footer text-center">
+	<footer id="footer_contacts" class="dron__footer text-center">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-sm-push-3">

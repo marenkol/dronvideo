@@ -1,6 +1,8 @@
 
 /* GENERAL STYLES */
 
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400');
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 body {
 	font-family: 'Roboto', sans-serif;
@@ -28,21 +30,46 @@ body {
 	font-weight: normal;
 }
 
+.dronex_pagetitle,
+.dronex_pagesubtitle {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+}
 .dronex_pagetitle {
 	font-size: 29px;
 }
 @media (min-width: 648px) {
 	.dronex_pagetitle {
-		font-size: 65px;
+		font-size: 55px;
 	}
 }
 @media (min-width: 992px) {
 	.dronex_pagetitle {
-		font-size: 95px;
+		font-size: 90px;
 	}
 }
 
+
+
 /* NAV */
+
+
+.dronex_nav_phones {
+	background-color: #222;
+	padding-top: 10px;
+}
+.dronex_nav_phones ul {
+	list-style: none;
+}
+.dronex_nav_phones ul li a {
+	line-height: 20px;
+	height: 20px;
+	text-decoration: none;
+	padding: 10px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
 .navbar-default {
 	background-color: rgba(225,225,225, .5);
 }
@@ -70,15 +97,39 @@ body {
 }
 .navbar-brand {
 	position: relative;
+	padding-top: 10px;
 	z-index: 8002;
 }
 .dronex_navbar_collapse .navbar-right li a {
 	height: 40px;
 	line-height: 40px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 5px 7px;
 	border-bottom: 1px solid #fff;
+	text-transform: uppercase;
+	position: relative;
 }
+
+.dronex_navbar_collapse .navbar-right li a:before {
+	content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background-color: #fff;
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.dronex_navbar_collapse .navbar-right li:hover a:before {
+	left: 0;
+	right: 0;
+}
+
+
 @media (min-width:768px) {
 	.dronex_navbar_collapse .navbar-right li a {
 		height: 80px;
@@ -169,8 +220,6 @@ INTRO SECTION
 .dronex_intro__title {
     text-transform: uppercase;
     opacity: .9;
-    font-weight: 300;
-	font-family: 'Roboto', sans-serif;
 	position: relative;
 	z-index: 1;
 }
@@ -196,7 +245,10 @@ INTRO SECTION
     letter-spacing: 1px;
     text-align: justify;
 }
-
+.dronex_intro__scroll a {
+	color: #FFF;
+	text-decoration: none;
+}
 
 
 /*=============================================
@@ -227,8 +279,6 @@ WORKS SECTION
 	z-index: 1;
     text-transform: uppercase;
     opacity: .9;
-    font-weight: 300;
-	font-family: 'Roboto', sans-serif;
 }
 .dronex_works__content {
 	color: #111;
@@ -276,14 +326,12 @@ TYPE OF WORKS SECTION
 	z-index: 1;
     text-transform: uppercase;
     opacity: .9;
-    font-weight: 300;
-	font-family: 'Roboto', sans-serif;
 }
 .dronex_typeofworks__content {
 	color: #111;
 	padding: 80px 20px;
 }
-.dronex_typeofworks__flexbox {
+/* .dronex_typeofworks__flexbox {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -293,10 +341,11 @@ TYPE OF WORKS SECTION
 	flex-basis: 300px;
 	margin-bottom: 30px;
 	padding: 5px;
-}
+} */
 .dronex_typeofworks__flex-item-title {
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: 16px;
 }
 .dronex_typeofworks__flex-item-img {
 	margin-bottom: 15px;
@@ -342,8 +391,6 @@ DETAILS SECTION
 	z-index: 1;
     text-transform: uppercase;
     opacity: .9;
-    font-weight: 300;
-	font-family: 'Roboto', sans-serif;
 }
 .dronex_details__content {
 	color: #111;
@@ -449,3 +496,9 @@ FOOTER
 	margin-right: 5px;
 	font-size: 30px;
 }
+
+
+
+
+/* ================================= */
+
